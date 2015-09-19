@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="map" tilewidth="16" tileheight="16">
+  <image source="map.png" width="48" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="playerStart" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="floor" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztl8EShDAIQ7v2//95Z69Oi6WEElwOHJxRyDNpq7211l9SV1ChZhcHRndx/CeHde942lPY/Zj1LA4+jnvu0ByWntqz1pMD3Xfl2jNXiO8Wab/yzpXlnic/rPchOHZmas6X0xzouWwc1vOehQPhy2kOqUcmP9A+FEdxFMc5jojymP/r+QnwBenvDjPiXXr5ocn1TrZH51/UOt/hGM3IxiFlKAvHaD1J/dg4ZusuC4ekf5QvRg6pz8wH7WxPjhU9KK3eHJpnmDi0mWDm0M5g4kCuywgO9N4SwcGuf0VnFgZJayaGmd5sDBJHtC4ER8aS/nWrztdbPInONbK+BQwV3Q==
+  </data>
+ </layer>
+</map>

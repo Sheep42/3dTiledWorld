@@ -1,0 +1,61 @@
+
+images1.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wall
+  rotate: false
+  xy: 2, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+unlockedDoor
+  rotate: false
+  xy: 2, 104
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lockedDoor
+  rotate: false
+  xy: 2, 206
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grass
+  rotate: false
+  xy: 2, 308
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+exit
+  rotate: false
+  xy: 2, 410
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+treasure
+  rotate: false
+  xy: 64, 410
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 2, 472
+  size: 50, 30
+  orig: 50, 30
+  offset: 0, 0
+  index: -1
+key
+  rotate: false
+  xy: 64, 452
+  size: 45, 20
+  orig: 45, 20
+  offset: 0, 0
+  index: -1
