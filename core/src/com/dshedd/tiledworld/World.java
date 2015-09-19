@@ -39,10 +39,10 @@ public class World {
 		tiledMap = new TmxMapLoader().load("maps/test.tmx");
 		layer = (TiledMapTileLayer) tiledMap.getLayers().get(0);
 		
-		generateLevel(currentLevel);
+		generateLevel();
 	}
 	
-	private void generateLevel(int levelNumber) {
+	private void generateLevel() {
 		walls.clear();
 		floors.clear();
 		exits.clear();
@@ -56,25 +56,25 @@ public class World {
             	 cell = layer.getCell(x,y);
             	 
             	 if(cell.getTile().getProperties().containsKey("wall")){
-            		 walls.add(new Wall(x, layer.getHeight() - y, 1f, 1f));
+            		 walls.add(new Wall(x, layer.getHeight() - y, 1f, 1f)); //Add a wall to the walls array
             	 }
             	 
             	 else if(cell.getTile().getProperties().containsKey("floor")){
-            		 floors.add(new Floor(x, layer.getHeight() - y, 1f, 1f));
+            		 floors.add(new Floor(x, layer.getHeight() - y, 1f, 1f)); //Add a floor to the floors array
             	 }
             	 
             	 else if(cell.getTile().getProperties().containsKey("playerStart")){
-            		 floors.add(new Floor(x, layer.getHeight() - y, 1f, 1f));
-            		 player.getCenterPos().set(x, layer.getHeight() - y);
+            		 floors.add(new Floor(x, layer.getHeight() - y, 1f, 1f)); //Add a floor tile beneath the player
+            		 player.getCenterPos().set(x, layer.getHeight() - y); //Set player starting pos
             	 }
             }
             
         }
         
         //Old level loading
-		inventoryGems = 0;
-		inventoryKeys = 0;
-		map.load("Level"+levelNumber+".map");
+		//inventoryGems = 0;
+		//inventoryKeys = 0;
+		//map.load("Level"+levelNumber+".map");
 	}
 	
 	public void update(float delta) {
@@ -158,13 +158,13 @@ public class World {
 	
 	private void restartLevel() {
 		player.setRotation(0.0f);
-		generateLevel(currentLevel);
+		generateLevel();
 	}
 	
 	private void restartGame() {
 		player.setRotation(0.0f);
 		currentLevel = 1;
-		generateLevel(currentLevel);
+		generateLevel();
 	}
 	
 	private void addGem() {
@@ -182,7 +182,7 @@ public class World {
 	private void nextLevel() {
 		currentLevel++;
 		player.setRotation(0.0f);
-		generateLevel(currentLevel);
+		generateLevel();
 	}
 
 	public TiledWorldBuilder getGame() {
