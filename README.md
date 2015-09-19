@@ -5,4 +5,4 @@ This was built originally as a prototype to a game that never went anywhere so t
 
 The demo is heavily inspired by and built on top of existing code from <a href="https://github.com/TheInvader360" target="_blank">TheInvader360's</a> Arena Roamer tutorial in which a text file is used to render a 3D and a 2D arena with collectable items. 
 
-We never got farther than building this demo, but I figured I might as well release the code for the world renderer and let some people hack on it. There's some more info on <a href="http://dshedd.com/2015/09/rendering-a-tiled-tmx-map-as-a-3d-world-in-libgdx/">my blog</a>.
+We never got farther than building this demo, but I figured I might as well release the code for the world renderer and let some people hack on it. There's some more info on <a href="http://dshedd.com/2015/09/rendering-a-tiled-tmx-map-as-a-3d-world-in-libgdx/" target="_blank">my blog</a>.
